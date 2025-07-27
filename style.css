@@ -1,0 +1,169 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.top {
+  height: 710px;
+  background-color: rgb(225, 255, 143);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.top__content {
+  padding-top: 196px;
+  padding-bottom: 246px;
+}
+.top__title {
+  color: rgb(32, 32, 39);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+  width: 769px;
+  height: 156px;
+  margin-bottom: 24px;
+}
+.top__text {
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  width: 720px;
+  height: 64px;
+  margin-bottom: 48px;
+}
+.top__button {
+  height: 66px;
+  width: 247px;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background-color: rgb(32, 32, 39);
+  transition: transform 0.3s ease;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.top__button:hover {
+  background-color: rgb(255, 255, 255); /* Меняем цвет фона кнопки */
+  color: rgb(0, 0, 0); /* Меняем цвет текста кнопки */
+}
+.top__description {
+  margin-bottom: 48px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgb(32, 32, 39);
+}
+
+.strip {
+  height: 50px;
+  background: #BCEC30;
+  display: inline-flex;
+  padding: 27px 49px;
+  flex-direction: row;
+  align-items: center;
+  gap: 51px;
+  width: 100%;
+  position: relative;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+.strip-content {
+  display: flex;
+  gap: 20px;
+}
+.strip__text {
+  color: #202027;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 33px */
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  white-space: nowrap; /* Запрещаем перенос текста на новую строку */
+}
+
+.games {
+  background-color: rgb(32, 32, 39);
+  height: 1470px;
+}
+.games__title {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  padding-top: 94px;
+  padding-bottom: 24px;
+}
+.games__text {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 72px;
+}
+.games__cards {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  height: 1470px;
+}
+.games__row {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  width: 378px;
+  height: 1056px;
+}
+
+.game-card {
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  transition: all 1s;
+}
+.game-card:hover {
+  transform: scale(1.05);
+}
+.game-card__content {
+  padding: 36px 36px 36px 36px;
+}
+.game-card__button {
+  border-radius: 52.58px;
+  background: rgb(247, 247, 247);
+  width: 111px;
+  height: 36px;
+  color: rgb(32, 32, 39);
+  font-size: 16px;
+  font-weight: 500;
+}
+.game-card__name {
+  color: rgb(32, 32, 39);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  padding-top: 32px;
+}
+
+.games-mini {
+  height: 3500px;
+  background-color: rgb(32, 32, 39);
+}/*# sourceMappingURL=style.css.map */

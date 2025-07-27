@@ -13,11 +13,13 @@ body {
 }
 
 .top {
+    background-image: url(img/stars-header.png);
     height: 710px;
     background-color: rgb(225, 255, 143);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;     
+    background-size: auto;
+    background-position: -7% 90%;
+    object-fit: cover;
 
     &__content {
         padding-top: 196px;
@@ -160,7 +162,8 @@ body {
         }
            
     &__content {
-        padding: 36px 36px 36px 36px;        
+        padding: 36px 36px 36px 36px;
+        position: relative;      
     }
     
     &__button {
@@ -179,6 +182,14 @@ body {
         font-weight: 700;
         line-height: 39px;
         padding-top: 32px;
+    }
+
+    &__img {
+        position: absolute;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: -7% 90%; 
     }
 }
 

@@ -10,11 +10,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="top center">        
+    <div class="top center">             
         <section class="top__content">
-            <h1 class="top__title">Добро пожаловать <br>на мой сайт мини-игр</h1>        
-            <p class="top__text">Тебе предстоит пройти несколько увлекательных игр. <br>Если готов, нажимай <span class="top__description">«Поехали!»</span> и <span class="top__description">приступай</span>.</p>
-            <button class="top__button">Поехали! <a href="#games"></a></button>
+            <img class="top__img" src="img/stars-header.png" alt="stars">
+            <div class="top__container">
+                <h1 class="top__title">Добро пожаловать <br>на мой сайт мини-игр</h1>        
+                <p class="top__text">Тебе предстоит пройти несколько увлекательных игр. <br>Если готов, нажимай <span class="top__description">«Поехали!»</span> и <span class="top__description">приступай</span>.</p>
+                <button class="top__button">Поехали! <a href="#games"></a></button>
+            </div>
         </section>
     </div>
     <div class="strip center">
@@ -44,9 +47,14 @@
         </div> 
     </div>
     <section class="games center" >
+        <div class="games__container">
+        <img class="games__img" src="img/stars-min.png" alt="stars-min">
         <h2 class="games__title">Об играх</h2>
-        <p class="games__text">В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может поиграть каждый.<br>Все игры доступны для пользования.</p>
+        <p class="games__text">В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может поиграть каждый.<br>Все игры доступны для пользования.</p>  
+        </div>
+        
         <div class="games__cards">
+            <img class="games__img1" src="img/Star 1.png" alt="Star">
             <div class="games__row" id="games">
                 <article class="game-card">
                     <img src="img/card1.svg" alt="guess the number">
@@ -84,8 +92,7 @@
                     <img src="img/card3.svg" alt="Flip the text">
                     <section class="game-card__content">
                         <button class="game-card__button">Игра № 3</button>
-                        <h3 class="game-card__name">Переверни текст</h3>
-                        <img class="game-card__img" src="img/Star 1.png" alt="Star">                
+                        <h3 class="game-card__name">Переверни текст</h3>                                       
                     </section>
                 </article>
                 <article class="game-card game-card_big">

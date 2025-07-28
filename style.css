@@ -58,17 +58,22 @@ body {
 .top__button {
   height: 66px;
   width: 247px;
+  padding: 20px 40px;
   box-sizing: border-box;
   border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
   background-color: rgb(32, 32, 39);
-  transition: transform 0.3s ease;
   color: rgb(255, 255, 255);
   font-size: 24px;
   font-weight: 600;
   line-height: 141.69%;
   letter-spacing: 0%;
   text-align: center;
+  position: relative;
+  z-index: 999;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 .top__button:hover {
   background-color: rgb(255, 255, 255); /* Меняем цвет фона кнопки */

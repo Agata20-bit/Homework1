@@ -203,4 +203,75 @@ body {
 .games-mini {
   height: 3500px;
   background-color: rgb(32, 32, 39);
+  margin-bottom: 72px;
+}
+.games-mini__cards {
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.game-mini-card {
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  flex-direction: row-reverse;
+  transition: all 1s;
+}
+.game-mini-card:hover {
+  transform: scale(1.05);
+}
+.game-mini-card__content {
+  width: 600px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10;
+  padding: 48px;
+}
+.game-mini-card__button {
+  border-radius: 60px;
+  background: rgb(0, 0, 0);
+  width: 247px;
+  height: 66px;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.game-mini-card__button:hover {
+  background-color: rgb(255, 255, 255); /* Меняем цвет фона кнопки */
+  color: rgb(0, 0, 0); /* Меняем цвет текста кнопки */
+}
+.game-mini-card__name {
+  color: rgb(32, 32, 39);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  text-align: left;
+  padding-bottom: 24px;
+}
+.game-mini-card__text {
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 36px;
+}
+
+.game-mini-card-contrary {
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  transition: all 1s;
+}
+.game-mini-card-contrary:hover {
+  transform: scale(1.05);
 }/*# sourceMappingURL=style.css.map */

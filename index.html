@@ -54,7 +54,7 @@
         </div>
         
         <div class="games__cards">
-            <img class="games__img1" src="img/Star 1.png" alt="Star">
+            <img class="games__img1" src="img/Star1.png" alt="Star">
             <div class="games__row">
                 <article class="game-card">
                     <img src="img/card1.svg" alt="guess the number">
@@ -63,20 +63,20 @@
                         <h3 class="game-card__name">Угадай число</h3>   
                     </section>                               
                 </article>
-                <article class="game-card game-card_big">
+                <article class="game-card game-card--big">
                     <img src="img/card4.svg" alt="Rock, Paper, Scissors">
                     <section class="game-card__content">
                         <button class="game-card__button">Игра № 4</button>
-                        <h3 class="game-card__name name_big">Камень, <br> ножницы, <br> бумага</h3>                
+                        <h3 class="game-card__name name--big">Камень, <br> ножницы, <br> бумага</h3>                
                     </section>
                 </article>                
             </div>
             <div class="games__row">
-                <article class="game-card game-card_big">
+                <article class="game-card game-card--big">
                     <img src="img/card2.svg" alt="Simple arithmetic">
                     <section class="game-card__content">
                         <button class="game-card__button">Игра № 2</button>
-                        <h3 class="game-card__name name_big">Простая <br>арифметика</h3>                
+                        <h3 class="game-card__name name--big">Простая <br>арифметика</h3>                
                     </section>
                 </article>
                 <article class="game-card">
@@ -95,11 +95,11 @@
                         <h3 class="game-card__name">Переверни текст</h3>                                       
                     </section>
                 </article>
-                <article class="game-card game-card_big">
+                <article class="game-card game-card--big">
                     <img src="img/card6.svg" alt="Random Color Generator">
                     <section class="game-card__content">
                         <button class="game-card__button">Игра № 6</button>
-                        <h3 class="game-card__name name_big">Генератор <br>случайных<br>цветов</h3>                
+                        <h3 class="game-card__name name--big">Генератор <br>случайных<br>цветов</h3>                
                     </section>
                 </article>
             </div>
@@ -107,6 +107,56 @@
     </section>
     <section class="games-mini center">
         <h2 class="games__title">Мини-игры</h2>
+        <div class="games-mini__cards">
+            <article class="game-mini-card">
+                   <img class="game-mini-card__img" src="img/card1.svg" alt="guess the number">
+                    <section class="game-mini-card__content">
+                        <h3 class="game-mini-card__name">Угадай число</h3>
+                        <p class="game-mini-card__text">Попробуй угадать случайное<br>число от 1 до 100.</p>
+                        <button class="game-mini-card__button">Играть!</button>   
+                    </section>              
+            </article>
+            <article class="game-mini-card-contrary">
+                <img class="game-mini-card__img" src="img/card2.svg" alt="Simple arithmetic">
+                <section class="game-mini-card__content">
+                    <h3 class="game-mini-card__name">Простая <br>арифметика</h3>
+                    <p class="game-mini-card__text">Попробуй решить простые арифметические задачи.</p>
+                    <button class="game-mini-card__button">Играть!</button>                                   
+                </section>
+            </article>
+            <article class="game-mini-card">
+                <img class="game-mini-card__img" src="img/card3.svg" alt="Flip the text">
+                <section class="game-mini-card__content">
+                    <h3 class="game-mini-card__name">Переверни текст</h3>
+                    <p class="game-mini-card__text">Попробуй ввести текст, который <br>будет перевернут.</p>
+                    <button class="game-mini-card__button">Играть!</button>                                                           
+                </section>
+            </article>
+            <article class="game-mini-card-contrary">
+                    <img class="game-mini-card__img" src="img/card4.svg" alt="Rock, Paper, Scissors">
+                    <section class="game-mini-card__content">
+                        <h3 class="game-mini-card__name name--big">Камень, <br> ножницы, <br> бумага</h3>
+                        <p class="game-mini-card__text">Сыграй в популярную игру против компьютера.</p>
+                        <button class="game-mini-card__button">Играть!</button>                                        
+                    </section>
+            </article>  
+            <article class="game-mini-card">
+                    <img class="game-mini-card__img" src="img/card5.svg" alt="SimpleQuiz">
+                    <section class="game-mini-card__content">
+                        <h3 class="game-mini-card__name">Простая<br>викторина</h3>
+                        <p class="game-mini-card__text">Отвечай на вопросы викторин <br>с вариантами ответов.</p>
+                        <button class="game-mini-card__button">Играть!</button>                
+                    </section>
+            </article>
+            <article class="game-mini-card-contrary">
+                    <img class="game-mini-card__img" src="img/card6.svg" alt="Random Color Generator">
+                    <section class="game-mini-card__content">
+                        <h3 class="game-mini-card__name">Генератор <br>случайных<br>цветов</h3>                
+                        <p class="game-mini-card__text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                        <button class="game-mini-card__button">Играть!</button>
+                    </section>
+            </article>
+        </div>        
     </section>
 </body>
 </html>

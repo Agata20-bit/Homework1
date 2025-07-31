@@ -44,7 +44,6 @@ body {
         font-weight: 700;
         line-height: 78px;
         text-align: left;
-        width: 769px;
         height: 156px;
         margin-bottom: 24px;
     }
@@ -55,7 +54,7 @@ body {
         font-weight: 400;
         line-height: 32px;
         text-align: left;
-        width: 720px;
+        max-width: 720px;
         height: 64px;
         margin-bottom: 48px;
     }
@@ -93,6 +92,10 @@ body {
         line-height: 32px;
         color: rgb(32, 32, 39);
     }    
+}
+
+.menu-mob {
+    display: none;
 }
 
 .strip {
@@ -229,7 +232,25 @@ body {
 .games-mini {
     height: 3500px;
     background-color:rgb(32, 32, 39);
-    margin-bottom: 72px;
+    z-index: 0;
+
+    &__container {
+        position: relative;  
+    }
+
+    &__img1 {
+        position: absolute;
+        z-index: 1; /* Отправляет изображение на задний план */
+        left: 1200px;
+        top: 100px;
+    }
+
+    &__img2 {
+        position: absolute;
+        z-index: 1; /* Отправляет изображение на задний план */
+        left: 1150px;
+        top: 3330px;
+    }
 
     &__cards {
         width: 1200px;
@@ -239,73 +260,92 @@ body {
         flex-wrap: wrap;
     }
 }
+
 .game-mini-card {
-        border-radius: 30px;
-        background-color: rgb(255, 255, 255);
-        width: 1200px;
-        height: 500px;
-        display: flex;
-        flex-direction: row-reverse;
-        transition: all 1s;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    max-width: 1200px;
+    height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+    transition: all 1s;
+    
 
-        &:hover {
-            transform: scale(1.05);
-        }
+    &:hover {
+        transform: scale(1.05);
+    }
            
-        &__content {
-            width: 600px;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            gap: 10;   
-            padding: 48px;
-        }
-
-        &__button {
-            border-radius: 60px;
-            background: rgb(0, 0, 0);
-            width: 247px;
-            height: 66px;
-            color: rgb(255, 255, 255);
-            font-size: 24px;
-            font-weight: 600;
-            text-align: center;
-            transition: transform 0.3s ease;
-
-            &:hover {
-            background-color: rgba(255, 255, 255, 255); /* Меняем цвет фона кнопки */
-            color: rgb(0, 0, 0); /* Меняем цвет текста кнопки */
-            }
-        }
-
-        &__name {
-            color: rgb(32, 32, 39);
-            font-size: 48px;
-            font-weight: 700;
-            line-height: 59px;
-            text-align: left;
-            padding-bottom: 24px;
-        }
-
-        &__text {
-            color: rgb(32, 32, 39);
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 32px;
-            margin-bottom: 36px;
-        }
+    &__content {
+        width: 600px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10;   
+        padding: 48px;
     }
+        
 
-    .game-mini-card-contrary {
-        border-radius: 30px;
-        background-color: rgb(255, 255, 255);
-        width: 1200px;
-        height: 500px;
-        display: flex;
-        transition: all 1s;
+    &__button {
+        border-radius: 60px;
+        background: rgb(0, 0, 0);
+        width: 247px;
+        height: 66px;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        transition: transform 0.3s ease;
 
         &:hover {
-            transform: scale(1.05);
-        }        
+        background-color: rgba(255, 255, 255, 255); /* Меняем цвет фона кнопки */
+        color: rgb(0, 0, 0); /* Меняем цвет текста кнопки */
+        }
     }
-   
+
+    &__name {
+        color: rgb(32, 32, 39);
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        text-align: left;
+        padding-bottom: 24px;
+    }
+
+    &__text {
+        color: rgb(32, 32, 39);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        margin-bottom: 36px;
+    }
+}
+
+.game-mini-card-contrary {
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    transition: all 1s;
+
+    &:hover {
+        transform: scale(1.05);
+    }        
+}
+
+.footer {
+    height: 150px;
+    background-color: rgb(189, 237, 53);
+    
+    &__text {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        text-align: center;
+        padding-top: 64px;
+    }
+
+}
+
+@import "mobil";

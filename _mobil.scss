@@ -1,0 +1,84 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px; 
+    }
+
+    .top {
+        padding-top: 147px;
+        height: 700px;
+       
+       
+        &__content {
+            position: static;
+            width: 262px;
+            height: 196px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24;
+            padding: 0px;
+        }
+
+        &__title {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        &__text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            padding-top: 24px;
+        }
+
+        &__description {
+            font-size: 16px;
+            line-height: 1px;
+        } 
+
+        &__button {
+         display:  none;
+        }
+    }
+
+    .menu-mob {
+        width: 285px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        
+        &__button {        
+            padding: 20px 40px;
+            box-sizing: border-box;
+            border: 1px solid rgb(32, 32, 39);
+            border-radius: 60px;
+            background-color: rgb(32, 32, 39);        
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+            text-align: center;
+            z-index: 999;
+            position: relative;  
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    .games {
+        display: none !important;
+    }
+
+    .game-mini-card {
+        width: 343px;
+        display: none;
+    }
+
+
+}

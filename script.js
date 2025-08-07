@@ -1,7 +1,2 @@
-let a = 10;
-
+let a = 2007;
 alert (a);
-
-let b = 20;
-
-alert(b);

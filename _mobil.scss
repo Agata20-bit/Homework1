@@ -8,32 +8,19 @@
     .top {
         padding-top: 147px;
         height: 700px;
+        z-index: 0; 
 
         &__img {
             display: none;
         }
-
-        &__img-mob {
-            position: absolute;
-            background-repeat: no-repeat;
-            background-size: auto;
-            left: -100px;
-            top: -300px;
-            height: auto;
-            z-index: 1;
-        } 
-
-        
-       
        
         &__content {
-            position: static;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 24;
-            padding: 0px;
+            padding: 0px;           
         }
 
         &__title {
@@ -62,6 +49,21 @@
         }
     }
 
+    .top-mob {
+        position: relative;
+        z-index: 1; 
+
+        &__img {
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: auto;
+            left: 100px;
+            top: 300px;
+            height: auto;
+            z-index: 1;      
+        } 
+    }
+
     .menu-mob {
         width: 285px;
         height: 55px;
@@ -86,6 +88,7 @@
             text-decoration: none;
             cursor: pointer;
             width: 285px;
+            margin: 29px;
         }
     }
 

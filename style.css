@@ -9,8 +9,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
+  padding-left: calc(50% - 720px);
+  padding-right: calc(50% - 720px);
 }
 
 .top {
@@ -29,6 +29,9 @@ body {
   top: -300px;
   height: auto;
   z-index: 1;
+}
+.top-mob {
+  display: none;
 }
 .top__content {
   padding-top: 196px;
@@ -317,9 +320,12 @@ body {
   .top {
     padding-top: 147px;
     height: 700px;
+    z-index: 0;
+  }
+  .top__img {
+    display: none;
   }
   .top__content {
-    position: static;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -348,6 +354,19 @@ body {
   .top__button {
     display: none;
   }
+  .top-mob {
+    position: relative;
+    z-index: 1;
+  }
+  .top-mob__img {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: auto;
+    left: 100px;
+    top: 300px;
+    height: auto;
+    z-index: 1;
+  }
   .menu-mob {
     width: 285px;
     height: 55px;
@@ -370,6 +389,7 @@ body {
     text-decoration: none;
     cursor: pointer;
     width: 285px;
+    margin: 29px;
   }
   .games {
     display: none !important;

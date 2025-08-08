@@ -8,6 +8,22 @@
     .top {
         padding-top: 147px;
         height: 700px;
+
+        &__img {
+            display: none;
+        }
+
+        &__img-mob {
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: auto;
+            left: -100px;
+            top: -300px;
+            height: auto;
+            z-index: 1;
+        } 
+
+        
        
        
         &__content {
@@ -52,6 +68,8 @@
         display: flex;
         align-items: center;
         
+                
+
         &__button {        
             padding: 20px 40px;
             box-sizing: border-box;

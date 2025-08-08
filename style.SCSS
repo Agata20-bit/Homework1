@@ -8,8 +8,8 @@ body {
 }
 
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
 }
 
 .top {
@@ -30,6 +30,10 @@ body {
         height: auto;
         z-index: 1;
     }  
+
+    &__img-mob {
+        display: none;
+    }
 
     &__content {
         padding-top: 196px;

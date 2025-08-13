@@ -320,12 +320,17 @@ body {
   .center {
     padding-left: 16px;
     padding-right: 16px;
-    width: 343px;
   }
   .top {
     padding-top: 147px;
     height: 700px;
     z-index: 0;
+    background: url(./img/stars-big_mobil.png) 156px 69px no-repeat rgb(225, 255, 143);
+  }
+  .top__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .top__img {
     display: none;
@@ -362,13 +367,14 @@ body {
   .top-mob {
     position: relative;
     z-index: 1;
+    display: block;
   }
   .top-mob__img {
     position: absolute;
     background-repeat: no-repeat;
     background-size: auto;
-    left: 100px;
-    top: 300px;
+    left: -199px;
+    top: -160px;
     height: auto;
     z-index: 1;
   }
@@ -412,6 +418,7 @@ body {
   .strip__mobile {
     display: flex;
     align-items: center;
+    display: block;
   }
   .games {
     display: none !important;
@@ -424,13 +431,16 @@ body {
     padding-bottom: 24px;
   }
   .games-mini {
-    height: 3740px;
+    height: 3832px;
   }
   .game-mini-card__content {
-    width: 343px;
+    width: 285px;
     text-align: left;
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .game-mini-card__content_mob {
+    height: 700px;
   }
   .games-mini__cards {
     height: 567.63px;
@@ -459,7 +469,7 @@ body {
     margin-bottom: 32px;
   }
   .game-mini-card__button {
-    width: 285px;
+    width: auto;
     box-sizing: border-box;
     border: 1px solid rgb(32, 32, 39);
     border-radius: 60px;
@@ -469,15 +479,14 @@ body {
     font-weight: 600;
     line-height: 141.69%;
     text-align: center;
-    z-index: 999;
-    position: relative;
     text-decoration: none;
     cursor: pointer;
     height: 55px;
+    display: block;
   }
   .game-mini-card-contrary {
-    width: 343px;
-    height: 567.63px;
+    width: 347px;
+    height: 611px;
     display: flex;
     flex-direction: column;
   }

@@ -8,8 +8,8 @@ body {
 }
 
 .center {
-    padding-left: calc(50% - 720px);
-    padding-right: calc(50% - 720px);
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 
 .top {
@@ -105,7 +105,7 @@ body {
 .strip {
     height: 50px;
     background: #BCEC30;
-    display: inline-flex;
+    display: flex;
     padding: 27px 49px;
     flex-direction: row;
     align-items: center;
@@ -115,14 +115,20 @@ body {
     overflow-x: auto;
     scroll-behavior: smooth;
     overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    padding: 27px 0;
 
     &-content {
         display: flex;
-        gap: 20px;
+        gap: 51px;
+        flex-shrink: 0;
     }
 
 
-    &__text {        
+    &__text {  
         color: #202027;
         font-size: 30px;
         font-style: normal;
@@ -132,7 +138,12 @@ body {
         text-transform: uppercase;
         white-space: nowrap; /* Запрещаем перенос текста на новую строку */
         
-    }
+    } 
+   
+    &__mobile {
+      display: none;
+    }  
+
 }
 
 .games {
@@ -204,6 +215,7 @@ body {
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
     transition: all 1s;
+    text-decoration: none;
 
         &:hover {
             transform: scale(1.05);
@@ -222,6 +234,7 @@ body {
         color: rgb(32, 32, 39);
         font-size: 16px;
         font-weight: 500;
+        border: none
     }
 
     &__name {
@@ -230,6 +243,7 @@ body {
         font-weight: 700;
         line-height: 39px;
         padding-top: 32px;
+        
     }    
 }
 
@@ -237,6 +251,7 @@ body {
     height: 3500px;
     background-color:rgb(32, 32, 39);
     z-index: 0;
+    
 
     &__container {
         position: relative;  
@@ -272,13 +287,7 @@ body {
     height: 500px;
     display: flex;
     flex-direction: row-reverse;
-    transition: all 1s;
-    
-
-    &:hover {
-        transform: scale(1.05);
-    }
-           
+               
     &__content {
         width: 600px;
         flex-direction: column;
@@ -292,17 +301,19 @@ body {
     &__button {
         border-radius: 60px;
         background: rgb(0, 0, 0);
-        width: 247px;
-        height: 66px;
         color: rgb(255, 255, 255);
         font-size: 24px;
         font-weight: 600;
         text-align: center;
+        text-decoration: none;
+        box-sizing: border-box;
+        padding: 16px 75px;
+        font-family: inherit;
         transition: transform 0.3s ease;
 
         &:hover {
-        background-color: rgba(255, 255, 255, 255); /* Меняем цвет фона кнопки */
-        color: rgb(0, 0, 0); /* Меняем цвет текста кнопки */
+            background-color: rgba(255, 255, 255, 255); /* Меняем цвет фона кнопки */
+            color: rgb(0, 0, 0); /* Меняем цвет текста кнопки */
         }
     }
 
@@ -329,12 +340,7 @@ body {
     background-color: rgb(255, 255, 255);
     width: 1200px;
     height: 500px;
-    display: flex;
-    transition: all 1s;
-
-    &:hover {
-        transform: scale(1.05);
-    }        
+    display: flex;        
 }
 
 .footer {

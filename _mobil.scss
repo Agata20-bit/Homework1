@@ -8,7 +8,8 @@
     .top {
         padding-top: 147px;
         height: 700px;
-        z-index: 0; 
+        z-index: 0;
+         
 
         &__img {
             display: none;
@@ -89,6 +90,25 @@
             cursor: pointer;
             width: 285px;
             margin: 29px;
+        }
+    }
+
+    .strip {
+        height: 51px;
+        gap: 27px;
+
+        &-content {
+            gap: 27px;  
+        }
+        &__text {
+            font-size: 16px;
+        }
+        &__star {
+            display: none;
+        }
+        &__mobile {
+            display: flex;
+            align-items: center;
         }
     }
 

@@ -9,8 +9,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 720px);
-  padding-right: calc(50% - 720px);
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 .top {
@@ -96,7 +96,7 @@ body {
 .strip {
   height: 50px;
   background: #BCEC30;
-  display: inline-flex;
+  display: flex;
   padding: 27px 49px;
   flex-direction: row;
   align-items: center;
@@ -106,10 +106,16 @@ body {
   overflow-x: auto;
   scroll-behavior: smooth;
   overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  padding: 27px 0;
 }
 .strip-content {
   display: flex;
-  gap: 20px;
+  gap: 51px;
+  flex-shrink: 0;
 }
 .strip__text {
   color: #202027;
@@ -120,6 +126,9 @@ body {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   white-space: nowrap; /* Запрещаем перенос текста на новую строку */
+}
+.strip__mobile {
+  display: none;
 }
 
 .games {
@@ -181,6 +190,7 @@ body {
   border-radius: 30px;
   background-color: rgb(255, 255, 255);
   transition: all 1s;
+  text-decoration: none;
 }
 .game-card:hover {
   transform: scale(1.05);
@@ -197,6 +207,7 @@ body {
   color: rgb(32, 32, 39);
   font-size: 16px;
   font-weight: 500;
+  border: none;
 }
 .game-card__name {
   color: rgb(32, 32, 39);
@@ -241,10 +252,6 @@ body {
   height: 500px;
   display: flex;
   flex-direction: row-reverse;
-  transition: all 1s;
-}
-.game-mini-card:hover {
-  transform: scale(1.05);
 }
 .game-mini-card__content {
   width: 600px;
@@ -257,12 +264,14 @@ body {
 .game-mini-card__button {
   border-radius: 60px;
   background: rgb(0, 0, 0);
-  width: 247px;
-  height: 66px;
   color: rgb(255, 255, 255);
   font-size: 24px;
   font-weight: 600;
   text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 16px 75px;
+  font-family: inherit;
   transition: transform 0.3s ease;
 }
 .game-mini-card__button:hover {
@@ -291,10 +300,6 @@ body {
   width: 1200px;
   height: 500px;
   display: flex;
-  transition: all 1s;
-}
-.game-mini-card-contrary:hover {
-  transform: scale(1.05);
 }
 
 .footer {
@@ -390,6 +395,23 @@ body {
     cursor: pointer;
     width: 285px;
     margin: 29px;
+  }
+  .strip {
+    height: 51px;
+    gap: 27px;
+  }
+  .strip-content {
+    gap: 27px;
+  }
+  .strip__text {
+    font-size: 16px;
+  }
+  .strip__star {
+    display: none;
+  }
+  .strip__mobile {
+    display: flex;
+    align-items: center;
   }
   .games {
     display: none !important;

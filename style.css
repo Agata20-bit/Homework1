@@ -253,6 +253,9 @@ body {
   display: flex;
   flex-direction: row-reverse;
 }
+.game-mini-card__img {
+  max-width: 100%;
+}
 .game-mini-card__content {
   width: 600px;
   flex-direction: column;
@@ -302,6 +305,14 @@ body {
   display: flex;
 }
 
+.game-mini-card-contrary1 {
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  width: 1200px;
+  height: 500px;
+  display: flex;
+}
+
 .footer {
   height: 150px;
   background-color: rgb(189, 237, 53);
@@ -325,7 +336,7 @@ body {
     padding-top: 147px;
     height: 700px;
     z-index: 0;
-    background: url(./img/stars-big_mobil.png) 156px 69px no-repeat rgb(225, 255, 143);
+    background: url(./img/stars-big_mobil.png) 39px -102px no-repeat rgb(225, 255, 143);
   }
   .top__container {
     display: flex;
@@ -431,13 +442,12 @@ body {
     padding-bottom: 24px;
   }
   .games-mini {
-    height: 3832px;
+    height: 3740px;
   }
   .game-mini-card__content {
     width: 285px;
     text-align: left;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 29px;
   }
   .game-mini-card__content_mob {
     height: 700px;
@@ -485,6 +495,12 @@ body {
     display: block;
   }
   .game-mini-card-contrary {
+    width: 347px;
+    height: 611px;
+    display: flex;
+    flex-direction: column;
+  }
+  .game-mini-card-contrary1 {
     width: 347px;
     height: 611px;
     display: flex;

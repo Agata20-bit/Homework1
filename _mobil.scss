@@ -8,7 +8,7 @@
         padding-top: 147px;
         height: 700px;
         z-index: 0;
-        background:url(./img/stars-big_mobil.png) 156px 69px no-repeat rgb(225, 255, 143);  
+        background:url(./img/stars-big_mobil.png) 39px -102px no-repeat rgb(225, 255, 143);  
          
         &__container {
             display: flex;
@@ -132,14 +132,13 @@
     }
 
     .games-mini {
-        height: 3832px;
+        height: 3740px;
     }
 
     .game-mini-card__content {
         width: 285px;
         text-align: left;
-        padding-left: 16px;
-        padding-right: 16px;
+        padding: 29px;
        
         &_mob {
             height: 700px;
@@ -197,9 +196,14 @@
         width: 347px;
         height: 611px;
         display: flex;        
-        flex-direction: column;
+        flex-direction: column;        
+    }
 
-        
+    .game-mini-card-contrary1 {
+        width: 347px;
+        height: 611px;
+        display: flex;        
+        flex-direction: column;        
     }
 
     .footer {

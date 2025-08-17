@@ -255,6 +255,7 @@ body {
 }
 .game-mini-card__img {
   max-width: 100%;
+  height: auto;
 }
 .game-mini-card__content {
   width: 600px;

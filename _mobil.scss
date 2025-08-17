@@ -133,6 +133,14 @@
 
     .games-mini {
         height: 3740px;
+
+        &__img1 {
+            display: none;
+        }
+
+        &__img2 {
+            display: none;
+        }
     }
 
     .game-mini-card__content {
@@ -150,6 +158,7 @@
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
+        width: 343px;
     }
 
     .game-mini-card {

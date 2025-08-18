@@ -124,13 +124,14 @@
 
         &__title {
             font-size: 40px;
+            font-weight: 600;
             line-height: 49px;
             text-align: left;
             padding-top: 48.34px;
             padding-bottom: 24px;
         }
     }
-
+         
     .games-mini {
         height: 3740px;
 
@@ -215,9 +216,13 @@
         flex-direction: column;        
     }
 
-    .footer {
-    height: 100px;
-    }
+    .footer__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    } 
 
 
 }

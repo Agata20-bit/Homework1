@@ -315,7 +315,6 @@ body {
 }
 
 .footer {
-  height: 150px;
   background-color: rgb(189, 237, 53);
 }
 .footer__text {
@@ -324,8 +323,8 @@ body {
   font-weight: 600;
   line-height: 29px;
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 61px;
 }
 
 @media (max-width: 767px) {

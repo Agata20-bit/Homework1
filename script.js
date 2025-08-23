@@ -1,6 +1,6 @@
 function startGame1() {
-    let targetNumber = Math.floor(Math.random() * 100) + 1; // Исправлено match на Math
-    let attempts = 0; // Добавляем счетчик попыток
+    let targetNumber = Math.floor(Math.random() * 100) + 1;
+    let attempts = 0;
     
     while (true) {
         let guess = prompt('Угадай число от 1 до 100.');

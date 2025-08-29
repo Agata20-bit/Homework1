@@ -32,7 +32,35 @@
 // console.log (arr);
 
 //task5
-const array = 1, 1, 1;
-array.push(2, 2, 2);
+// const array1 = [1, 1, 1];
+// array.push(2, 2, 2);
 
-console.log(array);
+// console.log(array1);
+
+//task6
+// const array2 = [9, 8, 7, 'a', 6, 5];
+// array2.sort();
+// // const result = array2.filter(item => typeof item === 'number');
+// // console.log(result); 
+
+// const filteredArr = array2.filter(item => typeof item === 'number');
+// console.log(filteredArr);
+
+//task7
+// const numbers = [9, 8, 7, 6, 5];
+// const userInput = prompt('Угадайте число');
+// const userNumber = Number(userInput);
+// if (isNaN(userNumber)) {
+//     alert('Пожалуйста, введите число!');
+// } else {
+//        if (numbers.includes(userNumber)) {
+//         alert('Угадал!');
+//     } else {
+//         alert('Не угадал');
+//     }
+// }
+
+//task8
+// let letters = ['abcdef'];
+// let reversedString = letters[0].split('').reverse().join('');
+// console.log(reversedString);

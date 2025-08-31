@@ -63,9 +63,8 @@ function startGame2() {
 
             case '/':
                 b = Math.floor(Math.random() * 10) + 1;
-                a = Math.floor(Math.random() * 10) + 1;
-                result = a * b;
-                a = result;
+                a = b * Math.floor(Math.random() * 10); 
+                result = a / b;
             break;
         }
     }

@@ -127,3 +127,40 @@ function startGame2() {
     }
 }
 
+function startGame3() {
+    while (true) {
+        let inputText = prompt('Введи текст, который будет перевернут или нажми "Отмена" для выхода');
+        
+        if (inputText === null) {
+            alert('Игра отменена. Спасибо за участие!');
+            break;
+        }
+               
+        const reversedText = inputText
+        .split('') .reverse() .join(''); 
+        
+        alert(`Исходный текст: ${inputText}\nПеревернутый текст: ${reversedText}`);
+    }
+    
+    console.log('Игра завершена!');
+}
+
+
+function startGame4() {
+    while (true) {
+        let inputText = prompt('Введи текст, который будет перевернут или нажми "Отмена" для выхода');
+        
+        if (inputText === null) {
+            alert('Игра отменена. Спасибо за участие!');
+            break;
+        }
+               
+        const reversedText = inputText
+        .split('') .reverse() .join(''); 
+        
+        alert(`Исходный текст: ${inputText}\nПеревернутый текст: ${reversedText}`);
+    }
+    
+    console.log('Игра завершена!');
+}
+

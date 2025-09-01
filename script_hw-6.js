@@ -10,8 +10,13 @@ for (let i = 0; i < array.length; i++) {
 }
 
 //task2
-const numbs = [1, 5, 4, 10, 0, 3];
-console.log(numbs[2]);
+const numbs = [1, 5, 4, 10, 0, 3]
+for (let i = 0; i < numbs.length; i++) {
+    if (numbs[i] === 4) {
+        console.log(i);
+        break;
+    }
+}
 
 // task3
 let number = [1, 3, 5, 10, 20];
@@ -33,7 +38,7 @@ console.log (arr);
 
 //task5
 const array1 = [1, 1, 1];
-array.push(2, 2, 2);
+array1.push(2, 2, 2);
 
 console.log(array1);
 
@@ -67,12 +72,12 @@ console.log(reversedString);
 
 //task9
 const array3 = [[1, 2, 3], [4, 5, 6]];
-let result1 = [];
+let newArr = [];
 for(let i = 0; i < array3.length; i++) {
-  result1 = result.concat(array3[i]);
+  newArr.push(...array3[i]);
 }
 
-console.log(result1); 
+console.log(newArr); 
 
 
 // task10
@@ -134,7 +139,7 @@ function randomInt1() {
 
 const randomNumb = [];
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 6; i++) {
     randomNumb.push(randomInt1());
 }
 

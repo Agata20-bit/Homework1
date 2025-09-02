@@ -147,20 +147,50 @@ function startGame3() {
 
 
 function startGame4() {
-    while (true) {
-        let inputText = prompt('Введи текст, который будет перевернут или нажми "Отмена" для выхода');
-        
-        if (inputText === null) {
-            alert('Игра отменена. Спасибо за участие!');
-            break;
+    const quiz = [
+        {
+            question: "Какой цвет небо?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2 
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
         }
-               
-        const reversedText = inputText
-        .split('') .reverse() .join(''); 
+    ];
+
+    let score = 0; // счетчик правильных ответов
+
+    function startQuiz() {
+        for (let i = 0; i < quiz.length; i++) {
+            const question = quiz[i];
+            
+            const optionsString = question.options.join('\n');
+            
+            const userAnswer = prompt(
+                `${question.question}\n\n${optionsString}\n\nВыберите номер правильного ответа:`
+            );
+            
+           if (userAnswer === null) {
+                alert('Викторина отменена.');
+                return;
+            }
+            
+            if (parseInt(userAnswer) === question.correctAnswer) {
+                score++;
+            }
+        }
         
-        alert(`Исходный текст: ${inputText}\nПеревернутый текст: ${reversedText}`);
+        alert(`Викторина завершена!\nВы правильно ответили на ${score} из ${quiz.length} вопросов.`);
     }
-    
+
+    startQuiz();
     console.log('Игра завершена!');
 }
 

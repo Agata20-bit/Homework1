@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">Задание 1</h1>
+    <button class="button">Скрыть</button>
+
+    <script>
+        const title = document.querySelector('.title');
+        const button = document.querySelector('.button');
+
+        function toggleTitle() {
+            if (title.style.display === 'none') {
+                title.style.display = 'block';
+                button.textContent = 'Скрыть';
+            } else {
+                title.style.display = 'none';
+                button.textContent = 'Показать';
+            }
+        }
+
+        button.addEventListener('click', toggleTitle);
+    </script>
+</body>
+</html>
+

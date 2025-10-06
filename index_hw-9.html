@@ -4,27 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .description {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
 </head>
 <body>
+    
     <h1 class="title">Задание 1</h1>
     <button class="button">Скрыть</button>
 
-    <script>
-        const title = document.querySelector('.title');
-        const button = document.querySelector('.button');
+    
+    <p class="paragraph">Задание 2</p>
+    <button class="colorButton">Изменить цвет</button>
 
+    
+    <h1 class="title-3">Задание 3</h1>
+    <button class="changeTextButton">Изменить текст</button>
+
+   
+    <div class="description">Оригинальный текст 1</div>
+    <div class="description">Оригинальный текст 2</div>
+    <div class="description">Оригинальный текст 3</div>
+
+    <script>
+        const title1 = document.querySelector('.title');
+        const buttonHide = document.querySelector('.button');
+        
         function toggleTitle() {
-            if (title.style.display === 'none') {
-                title.style.display = 'block';
-                button.textContent = 'Скрыть';
+            if (title1.style.display === 'none') {
+                title1.style.display = 'block';
+                buttonHide.textContent = 'Скрыть';
             } else {
-                title.style.display = 'none';
-                button.textContent = 'Показать';
+                title1.style.display = 'none';
+                buttonHide.textContent = 'Показать';
             }
         }
+        buttonHide.addEventListener('click', toggleTitle);
 
-        button.addEventListener('click', toggleTitle);
+        const paragraph = document.querySelector('.paragraph');
+        const buttonColor = document.querySelector('.colorButton');
+        
+        function changeColor() {
+            paragraph.style.color = 'blue';
+        }
+        buttonColor.addEventListener('click', changeColor);
+
+        const title3 = document.querySelector('.title-3');
+        const changeTextButton = document.querySelector('.changeTextButton');
+        
+        function changeTitleText() {
+            title3.textContent = 'Привет, мир!';
+        }
+        changeTextButton.addEventListener('click', changeTitleText);
+
+        const descriptions = document.querySelectorAll('.description');
+        descriptions.forEach(function(element) {
+            element.textContent = 'Измененный текст';
+        });
     </script>
 </body>
 </html>
-

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .description {
+        .description1 {
             margin: 10px;
             padding: 10px;
             border: 1px solid #ccc;
@@ -26,9 +26,25 @@
     <button class="changeTextButton">Изменить текст</button>
 
    
-    <div class="description">Оригинальный текст 1</div>
-    <div class="description">Оригинальный текст 2</div>
-    <div class="description">Оригинальный текст 3</div>
+    <div class="description1">Оригинальный текст 1</div>
+    <div class="description1">Оригинальный текст 2</div>
+    <div class="description1">Оригинальный текст 3</div>
+
+    <p class="description2">Первый абзац с классом description</p>
+    <p class="info">Обычный абзац без класса description</p>
+    <p class="description2">Второй абзац с классом description</p>
+    <p class="note">Еще один обычный абзац</p>
+    <p class="description2">Третий абзац с классом description</p>
+
+    <button class="btn">Новый абзац</button>
+    <div class="content"></div>
+
+    <p class="description3">Первый абзац с классом description</p>
+    <p class="info">Обычный абзац без класса description</p>
+    <p class="description3">Второй абзац с классом description</p>
+    <p class="note">Еще один обычный абзац</p>
+    <p class="description3">Третий абзац с классом description</p>
+    <button class="btn1">Удаление первого элемента</button>
 
     <script>
         const title1 = document.querySelector('.title');
@@ -61,10 +77,34 @@
         }
         changeTextButton.addEventListener('click', changeTitleText);
 
-        const descriptions = document.querySelectorAll('.description');
-        descriptions.forEach(function(element) {
+        const descriptions1 = document.querySelectorAll('.description');
+        descriptions1.forEach(function(element) {
             element.textContent = 'Измененный текст';
         });
+
+        const descriptions = document.querySelectorAll('.description2');
+        descriptions.forEach(function(paragraph) {
+            paragraph.textContent = 'Новый текст';
+        });
+
+        const btnEl = document.querySelector('.btn');
+        const contentEl = document.querySelector('.content');
+        btnEl.addEventListener('click', () => {
+            const textEl = document.createElement('p');
+            textEl.textContent = 'Новый абзац';
+            textEl.classList.add('text');
+            contentEl.appendChild(textEl);
+        });
+
+        const removeButton = document.querySelector('.btn1');
+        function removeFirstDescription() {
+            const firstDescription = document.querySelector('.description3');
+            if (firstDescription) {
+                firstDescription.remove();
+            }
+        }
+        removeButton.addEventListener('click', removeFirstDescription);
+
     </script>
 </body>
 </html>

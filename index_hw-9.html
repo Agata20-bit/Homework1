@@ -47,56 +47,7 @@
     <button class="btn1">Удаление первого элемента</button>
 
     <script>
-        const title1 = document.querySelector('.title');
-        const buttonHide = document.querySelector('.button');
-        
-        function toggleTitle() {
-            if (title1.style.display === 'none') {
-                title1.style.display = 'block';
-                buttonHide.textContent = 'Скрыть';
-            } else {
-                title1.style.display = 'none';
-                buttonHide.textContent = 'Показать';
-            }
-        }
-        buttonHide.addEventListener('click', toggleTitle);
-
-        const paragraph = document.querySelector('.paragraph');
-        const buttonColor = document.querySelector('.colorButton');
-        
-        function changeColor() {
-            paragraph.style.color = 'blue';
-        }
-        buttonColor.addEventListener('click', changeColor);
-
-        const title3 = document.querySelector('.title-3');
-        const changeTextButton = document.querySelector('.changeTextButton');
-        
-        function changeTitleText() {
-            title3.textContent = 'Привет, мир!';
-        }
-        changeTextButton.addEventListener('click', changeTitleText);
-
-        const descriptions1 = document.querySelectorAll('.description');
-        descriptions1.forEach(function(element) {
-            element.textContent = 'Измененный текст';
-        });
-
-        const descriptions = document.querySelectorAll('.description2');
-        descriptions.forEach(function(paragraph) {
-            paragraph.textContent = 'Новый текст';
-        });
-
-        const btnEl = document.querySelector('.btn');
-        const contentEl = document.querySelector('.content');
-        btnEl.addEventListener('click', () => {
-            const textEl = document.createElement('p');
-            textEl.textContent = 'Новый абзац';
-            textEl.classList.add('text');
-            contentEl.appendChild(textEl);
-        });
-
-        const removeButton = document.querySelector('.btn1');
+               const removeButton = document.querySelector('.btn1');
         function removeFirstDescription() {
             const firstDescription = document.querySelector('.description3');
             if (firstDescription) {

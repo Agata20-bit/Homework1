@@ -63,9 +63,23 @@
     </div>
   </body>
 
-  <script>
-    "use strict";
-    // Код писать здесь
-    console.log("It works!");
+  <script>"use strict";
+    const counter = document.querySelectorAll('.likes-counter');
+    const buttons = document.querySelectorAll('.like-button');
+
+
+    buttons.forEach(button => {
+      button.addEventListener('click', function() {
+        const counter = button.previousElementSibling;
+        
+        let currentNumber = parseInt(counter.textContent);
+        
+        currentNumber++;
+        
+        counter.textContent = currentNumber;
+     });
+    });
+
+    // console.log("It works!");
   </script>
 </html>

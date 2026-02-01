@@ -113,6 +113,8 @@ body {
         display: flex;
         gap: 51px;
         flex-shrink: 0;
+        display: inline-block;
+        animation: scroll-left 20s linear infinite;
     }
 
 

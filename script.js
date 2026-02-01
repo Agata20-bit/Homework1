@@ -255,6 +255,4 @@ function changeBackgroundColor() {
   body.style.backgroundColor = getRandomColor();
 }
 
-document
-  .getElementById("colorButton")
-  .addEventListener("click", changeBackgroundColor);
+

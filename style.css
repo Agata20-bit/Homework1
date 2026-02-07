@@ -8,6 +8,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.body {
+  background-color: #202027;
+}
+
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
@@ -17,7 +21,7 @@ body {
   height: 710px;
   background: rgb(225, 255, 143);
   background-image: url(./img/Star2.png), url(./img/Star3.png), url(./img/Star4.png), url(./img/Star5.png), url(./img/Star_big.png);
-  background-position: 63px 94px, 156px 69px, 1013px 568px, 948px 538px, 854px -333px;
+  background-position: left 59px top 100px, left 150px top 80px, right 250px bottom 50px, right 344px top 568px, left 625px top -350px;
   background-repeat: no-repeat;
 }
 .top-mob {
@@ -93,17 +97,22 @@ body {
   gap: 51px;
   width: 100%;
   position: relative;
-  overflow-x: auto;
-  scroll-behavior: smooth;
   overflow: hidden;
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
-  padding: 27px 0;
+}
+.strip-anim {
+  display: inline-block;
+  white-space: nowrap; /* Запрещаем перенос строк */
+  animation: scroll-left 50s linear infinite;
+  /* Ширина должна превышать видимую область для прокрутки */
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 .strip-content {
-  display: flex;
+  display: inline-flex; /* Вместо flex */
   gap: 51px;
   flex-shrink: 0;
 }
@@ -112,15 +121,24 @@ body {
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 110%; /* 33px */
+  line-height: 110%;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  white-space: nowrap; /* Запрещаем перенос текста на новую строку */
+  white-space: nowrap;
 }
 .strip__mobile {
   display: none;
 }
 
+/* Анимация прокрутки влево */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 .games {
   background: #202027;
   background-image: url(./img/Star11.png), url(./img/Star12.png), url(./img/Star1.png);
@@ -201,7 +219,6 @@ body {
 }
 
 .games-mini {
-  background: #202027;
   background-image: url(./img/Star6_.png), url(./img/Star7_.png), url(./img/Star8_.png), url(./img/Star10_.png);
   background-repeat: no-repeat;
   background-position: 1320px 126px, 1277px 93px, 1319px 3366px, 1249px 3414px;
@@ -215,7 +232,7 @@ body {
 }
 
 .game-mini-card {
-  border-radius: 30px;
+  border-radius: 50px;
   background-color: rgb(255, 255, 255);
   height: 500px;
   display: flex;
@@ -267,14 +284,14 @@ body {
 }
 
 .game-mini-card-contrary {
-  border-radius: 30px;
+  border-radius: 50px;
   background-color: rgb(255, 255, 255);
   height: 500px;
   display: flex;
 }
 
 .game-mini-card-contrary1 {
-  border-radius: 30px;
+  border-radius: 50px;
   background-color: rgb(255, 255, 255);
   height: 500px;
   display: flex;

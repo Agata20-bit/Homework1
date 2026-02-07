@@ -243,16 +243,13 @@ function startGame5() {
 `);
 }
 
-function getRandomColor() {
-  const r = Math.floor(Math.random() * 256); // Красный канал (0-255)
-  const g = Math.floor(Math.random() * 256); // Зелёный канал (0-255)
-  const b = Math.floor(Math.random() * 256); // Синий канал (0-255)
-  return `rgb(${r}, ${g}, ${b})`;
-}
+ function startGame6() {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        return `rgb(${r}, ${g}, ${b})`;
+    }
 
-function changeBackgroundColor() {
-  const body = document.body;
-  body.style.backgroundColor = getRandomColor();
-}
-
-
+    function changeBackgroundColor() {
+        document.body.style.backgroundColor = startGame6();
+    }

@@ -4,7 +4,7 @@ function startGame1() {
 
   while (true) {
     let guess = prompt(
-      'Угадай число от 1 до 100 или нажми "Отмена" для выхода'
+      'Угадай число от 1 до 100 или нажми "Отмена" для выхода',
     );
 
     if (guess === null) {
@@ -118,7 +118,7 @@ function startGame2() {
 
     function endGame() {
       alert(
-        `Игра окончена! Ваш результат: ${score} из ${totalQuestions} правильных ответов`
+        `Игра окончена! Ваш результат: ${score} из ${totalQuestions} правильных ответов`,
       );
     }
 
@@ -132,7 +132,7 @@ function startGame2() {
 function startGame3() {
   while (true) {
     let inputText = prompt(
-      'Введи текст, который будет перевернут или нажми "Отмена" для выхода'
+      'Введи текст, который будет перевернут или нажми "Отмена" для выхода',
     );
 
     if (inputText === null) {
@@ -176,7 +176,7 @@ function startGame4() {
       const optionsString = question.options.join("\n");
 
       const userAnswer = prompt(
-        `${question.question}\n\n${optionsString}\n\nВыберите номер правильного ответа:`
+        `${question.question}\n\n${optionsString}\n\nВыберите номер правильного ответа:`,
       );
 
       if (userAnswer === null) {
@@ -190,7 +190,7 @@ function startGame4() {
     }
 
     alert(
-      `Викторина завершена!\nВы правильно ответили на ${score} из ${quiz.length} вопросов.`
+      `Викторина завершена!\nВы правильно ответили на ${score} из ${quiz.length} вопросов.`,
     );
   }
 
@@ -223,12 +223,12 @@ function determineWinner(userChoice, computerChoice) {
 
 function startGame5() {
   const userChoice = prompt(
-    "Выберите: камень, ножницы или бумага"
+    "Выберите: камень, ножницы или бумага",
   ).toLowerCase();
 
   if (!["камень", "ножницы", "бумага"].includes(userChoice)) {
     return alert(
-      "Неверный ввод! Пожалуйста, выберите камень, ножницы или бумагу."
+      "Неверный ввод! Пожалуйста, выберите камень, ножницы или бумагу.",
     );
   }
 
@@ -243,13 +243,13 @@ function startGame5() {
 `);
 }
 
- function startGame6() {
-        const r = Math.floor(Math.random() * 256);
-        const g = Math.floor(Math.random() * 256);
-        const b = Math.floor(Math.random() * 256);
-        return `rgb(${r}, ${g}, ${b})`;
-    }
+function startGame6() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r}, ${g}, ${b})`;
+}
 
-    function changeBackgroundColor() {
-        document.body.style.backgroundColor = startGame6();
-    }
+function changeBackgroundColor() {
+  document.body.style.backgroundColor = startGame6();
+}

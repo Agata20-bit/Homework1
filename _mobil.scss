@@ -1,0 +1,228 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        padding-top: 147px;
+        height: 700px;
+        z-index: 0;
+        background:url(./img/stars-big_mobil.png) 39px -102px no-repeat rgb(225, 255, 143);  
+         
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__img {
+            display: none;
+        }
+       
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24;
+            padding: 0px;           
+        }
+
+        &__title {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        &__text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            padding-top: 24px;
+        }
+
+        &__description {
+            font-size: 16px;
+            line-height: 1px;
+        } 
+
+        &__button {
+         display:  none;
+        }
+    }
+
+    .top-mob {
+        position: relative;
+        z-index: 1;
+        display: block; 
+
+        &__img {
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: auto;
+            left: -199px;
+            top: -160px;
+            height: auto;
+            z-index: 1;      
+        } 
+    }
+
+    .menu-mob {
+        width: 285px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        
+                
+
+        &__button {        
+            padding: 20px 40px;
+            box-sizing: border-box;
+            border: 1px solid rgb(32, 32, 39);
+            border-radius: 60px;
+            background-color: rgb(32, 32, 39);        
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+            text-align: center;
+            z-index: 999;
+            position: relative;  
+            text-decoration: none;
+            cursor: pointer;
+            width: 285px;
+            margin: 29px;
+        }
+    }
+
+    .strip {
+        height: 51px;
+        gap: 27px;
+
+        &-content {
+            gap: 27px;  
+        }
+        &__text {
+            font-size: 16px;
+        }
+        &__star {
+            display: none;
+        }
+        &__mobile {
+            display: flex;
+            align-items: center;
+            display: block;
+        }
+    }
+
+    .games {
+        display: none !important;
+
+        &__title {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 49px;
+            text-align: left;
+            padding-top: 48.34px;
+            padding-bottom: 24px;
+        }
+    }
+         
+    .games-mini {
+        height: 3740px;
+
+        &__img1 {
+            display: none;
+        }
+
+        &__img2 {
+            display: none;
+        }
+    }
+
+    .game-mini-card__content {
+        width: 285px;
+        text-align: left;
+        padding: 29px;
+       
+        &_mob {
+            height: 700px;
+        }
+    }
+
+    .games-mini__cards {
+        height: 567.63px;        
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 343px;
+    }
+
+    .game-mini-card {
+        width: 343px;
+        height: 567.63px;
+        display: flex;        
+        flex-direction: column;
+        
+        &__name {
+        color: rgb(32, 32, 39);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        padding-bottom: 16px;
+        }
+
+        &__text {
+        color: rgb(32, 32, 39);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 32px;
+        }
+
+        &__button {  
+            width: auto;   
+            box-sizing: border-box;
+            border: 1px solid rgb(32, 32, 39);
+            border-radius: 60px;
+            background-color: rgb(32, 32, 39);        
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            height: 55px;
+            display: block;            
+        }
+    }
+
+    .game-mini-card-contrary {
+        width: 347px;
+        height: 611px;
+        display: flex;        
+        flex-direction: column;        
+    }
+
+    .game-mini-card-contrary1 {
+        width: 347px;
+        height: 611px;
+        display: flex;        
+        flex-direction: column;        
+    }
+
+    .footer__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    } 
+
+
+}

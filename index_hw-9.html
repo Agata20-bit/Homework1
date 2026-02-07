@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .description1 {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class="title">Задание 1</h1>
+    <button class="button">Скрыть</button>
+
+    
+    <p class="paragraph">Задание 2</p>
+    <button class="colorButton">Изменить цвет</button>
+
+    
+    <h1 class="title-3">Задание 3</h1>
+    <button class="changeTextButton">Изменить текст</button>
+
+   
+    <div class="description1">Оригинальный текст 1</div>
+    <div class="description1">Оригинальный текст 2</div>
+    <div class="description1">Оригинальный текст 3</div>
+
+    <p class="description2">Первый абзац с классом description</p>
+    <p class="info">Обычный абзац без класса description</p>
+    <p class="description2">Второй абзац с классом description</p>
+    <p class="note">Еще один обычный абзац</p>
+    <p class="description2">Третий абзац с классом description</p>
+
+    <button class="btn">Новый абзац</button>
+    <div class="content"></div>
+
+    <p class="description3">Первый абзац с классом description</p>
+    <p class="info">Обычный абзац без класса description</p>
+    <p class="description3">Второй абзац с классом description</p>
+    <p class="note">Еще один обычный абзац</p>
+    <p class="description3">Третий абзац с классом description</p>
+    <button class="btn1">Удаление первого элемента</button>
+
+    <script>
+               const removeButton = document.querySelector('.btn1');
+        function removeFirstDescription() {
+            const firstDescription = document.querySelector('.description3');
+            if (firstDescription) {
+                firstDescription.remove();
+            }
+        }
+        removeButton.addEventListener('click', removeFirstDescription);
+
+    </script>
+</body>
+</html>
